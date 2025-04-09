@@ -39,8 +39,6 @@ PilhaEncadeada pilha = new PilhaEncadeada();
 
         pilha.exibePilha(); // Exibe elementos da pilha após remoção(20,10)
 
-        ![image](https://github.com/user-attachments/assets/9710617a-8c62-43b3-9456-3dfaffffb476)
-
 
 
 
@@ -84,14 +82,3 @@ FilaEncadeada fila = new FilaEncadeada();
 
       // Exibindo os elementos da lista (30,40)
       fila.exibeFila();
-
-      ![image](https://github.com/user-attachments/assets/5803e33a-33af-4ad6-afc2-12115c0f2570)
-
-
-
-
-
-
-
-
-
