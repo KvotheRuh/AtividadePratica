@@ -1,0 +1,41 @@
+MANUAL - PILHA ENCADEADA
+
+A implementação está estruturada da seguinte maneira:
+
+O programa está estruturado na classe principal PilhaEncadeada.
+
+Em seguida é criada a classe No, nessa classe é armazenado o valor do no e é feita a referencia para o proximo nó.
+
+Em seguida é referenciado o topo da pilha com o valor null.
+
+O metodo insereElemento recebe como valor um elemento de valor inteiro.
+
+Dentro desse metodo é criado o novoNo com o elemento fornecido.
+
+Em seguida é verifacado se o topo possui o valor null, em caso de ser verdadeira essa condição o topo recebe como valor o novo nó.
+
+Caso o topo não seja null, o novo nó se torna o topo da pilha e o ponteiro do topo e apontado para o novo nó.
+
+Seguindo o código, temos o metodo removeElemento, nesse metodo incialmente é verificado se a pilha não esta vazia, caso a ela esteja vazia é retornado o valor -1 que significa falaha e o programa é encerrado. Caso a pilha não esteja vazia é feito a remoção do elemento do topo e o ponteiro é ajustado para o novo valor que esta no topo.
+
+No main, é feito a criação do objeto pilha.
+
+Podemos adionar valores na pilha utilizando pilha.insereElemento(elemento), para excluir elementos da pilha utilizamos pilha.removeElemento(). Por fim, podemos verificar a condição da fila utilizando o metodo exibirFila, pilha.exibirFila().
+
+Exemplos:
+
+PilhaEncadeada pilha = new PilhaEncadeada();
+
+        // Inserindo elementos na pilha
+        pilha.insereElemento(10);
+        pilha.insereElemento(20);
+        pilha.insereElemento(30);
+        pilha.insereElemento(40);
+
+        pilha.exibePilha(); // Exibe elementos da pilha (40,30,20,10)
+
+        pilha.removeElemento(); 
+        pilha.removeElemento();
+
+        pilha.exibePilha(); // Exibe elementos da pilha após remoção(20,10)
+

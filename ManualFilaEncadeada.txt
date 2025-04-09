@@ -1,0 +1,48 @@
+MANUAL - FILA ENCADEADA
+
+A implementação está estruturada da seguinte maneira:
+
+O programa está estruturado na classe principal FilaEncadeada.
+
+Em seguida é criada a classe No, nessa classe é armazenado o valor do no e é feita a referencia para o proximo nó.
+
+Em seguida, é atribuido inicialmente ao "No inicio" e ao "No fim" o valor "null".
+
+O metodo insereElemento, recebe como instancia o elemento que sera inserido na fila.
+
+Caso a fila esteja vazia, é criado um novo nó, como esse novo nó será o unico elemento da fila o ponteiro do inicio e do fim irão apontar para ele.
+
+Quando a fila não esta vazia, o ponteiro do fim irá apontar para o proximo novo nó que foi inserido na fila, indicando que o novo nó é o ultimo elemento da fila.
+
+No método removeElemento, é verificado incialmente se a fila está vazia chamando o método filaVazia, caso a fila esteja vazia é retornado o valor -1 que indica falha e o progrma é encerrado. Caso a fila não esteja vazia, é feito a exclusão do elemento e o ponteiro é ajustado.
+
+No main, é feito a criação do objeto fila.
+
+Ulitilizando os métodos descritos acima podemos inserir um elemento na fila utilizando fila.insereElemento(elemento), em seguida podemos remover um elemento da fila utilizando o fila.removeElemento(), por fim para verificarmos se foi efetuado a inserção e remoção dos elementos podemos utilizar fila.exibirFila().
+
+Exemplos: 
+
+ FilaEncadeada fila = new FilaEncadeada();
+
+        // Inserindo elementos na lista
+        fila.insereElemento(10);
+        fila.insereElemento(20);
+        fila.insereElemento(30);
+        fila.insereElemento(40);
+
+        fila.exibeFila(); //Exibe Elementos da Lista (10,20,30,40)
+
+        //Remove Elemento
+        fila.removeElemento();
+        fila.removeElemento();
+
+        // Exibindo os elementos da lista (30,40)
+        fila.exibeFila();
+
+
+
+
+
+
+
+
